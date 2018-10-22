@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Pic</title>
+</head>
+<body>
+
+<script>
+
+    var imgArray = ["imgs/bullmastiff.jpg", "imgs/germanShepherd.jpg", "imgs/goldenRetriever.jpg", "imgs/greatDane.jpg", "imgs/australianShepherd.jpg"];
+
+    function randomPic(){
+
+        var num = Math.floor(Math.random() * (imgArray.length+1));
+
+        document.src = imgArray[num];
+
+    }
+
+</script>
+
+<script type="text/javascript">randomPic()(imgArray);</script>
+
+</body>
+</html>
